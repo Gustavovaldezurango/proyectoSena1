@@ -1,0 +1,140 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "font-awesome";
+ 
+input{
+    height: 25px;
+}
+
+label{
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+footer{
+    border: 2px solid #f8dead;
+    background: rgb(255, 241, 212);
+    color: rgb(248, 162, 2);
+    font-weight: bold;
+    height: 60px;
+}
+
+#info-footer{
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    height: 450px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .20) 0%, rgba(0,0,0,.30) 100%), url("https://i.ytimg.com/vi/n_TaJ-zf0aU/maxresdefault.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 1400px;
+  
+} */
+/* 
+section{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 1px black;
+    height: 300px;
+    width: 500px;
+
+}
+
+article{
+    padding-top: 10px;
+    text-align: center;
+    height: 290px;
+    width: 380px;
+}
+
+input{
+    height: 25px;
+}
+
+label{
+    padding-right: 10px;
+    font-weight: 400;
+}
+
+
+aside{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: solid 1px black;
+    height: 300px;
+    width: 500px;
+}
+
+#logo{
+    padding-top: 20px;
+    width: 150px;
+    height: 90px;
+}
+
+#titulo{
+    color: rgb(255, 72, 0)
+}
+
+.informacion-empresa{
+    padding-top: 10px;
+    color: rgb(255, 72, 0)
+}
+
+footer{
+    background-color: #DACDCD;
+    height: 60px;
+}
+
+#info-footer{
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#registrar{
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+} */

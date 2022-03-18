@@ -1,0 +1,37 @@
+<head>
+    <script src="https://kit.fontawesome.com/594d98509e.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag "areas" %>
+
+</head>
+
+<body class ="container-areas">
+    <nav class= "nav-area">
+        <section id="index-logo-area"><%= image_tag("logo.png", width: "80", height: "60")%></section>
+        <section id="index-salir-area">
+            <div id="texto-salir-area">
+                <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
+            </div>
+        </section>
+    </nav>
+
+    <main class= "main-areas">
+        <section class="container-lista-areas">
+            <div id="titulo-menu-areas">
+                <h2 class= "h2-areas">Titulo</h2>
+            </div>
+            <div id="Menu">
+                <ul class="lista-areas">
+                    <li class="lista-areas-1"><%= link_to "Nueva Area", areas_path, :method => :get %></li>
+                </ul>
+            </div>
+            <div class ="volver-areas">
+                <%= link_to "Volver", home_index_path, :method => :get %>
+            </div>
+        </section>
+
+        <section id="index-bienvenida-home">
+            <p>In id nulla imperdiet, dignissim risus at, vulputate erat. Quisque at commodo quam. Phasellus ornare non augue a tincidunt. Cras eu gravida nibh. Proin posuere lacinia nisl id molestie. Nulla porttitor ligula quis dignissim luctus. Mauris risus est, scelerisque id pellentesque et, sollicitudin et sem. Sed eu consequat est, nec consectetur dolor. Morbi eget urna at leo consectetur imperdiet dignissim ut orci. Donec sagittis ipsum ut ipsum tempor, pulvinar dignissim lacus suscipit. Sed ultrices ultricies bibendum.</p>
+        </section>
+        
+    </main>
+</body>

@@ -1,0 +1,82 @@
+@import "font-awesome";
+
+.container-home{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.home-nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+}
+
+#index-logo-home{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative; left: 50px;
+}
+
+#index-salir-home{
+    position: relative; right: 50px; top: 15px;
+    text-align: center;
+    border: 1px solid rgb(0, 128, 64);
+    height: 30px;
+    width: 50px;
+}
+a{
+    text-decoration: none;
+}
+
+#texto-salir-home{
+    padding-top: 5px;
+    /*box-shadow: 10px 5px 5px black;*/
+    
+}
+
+.home-main{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    height: 450px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.container-lista-home{
+    border: solid 1px black;
+    width: 250px;
+    height: 450px;
+}
+
+
+#titulo-menu-home{
+    border: 1px solid rgb(38, 0, 255);
+    height: 40px;
+    text-align: center;
+}
+
+.h2-home{
+margin-top: 4px;
+}
+
+.lista-home-1{
+height: 25px;
+margin-left: -40px;
+border: solid 1px rebeccapurple;
+margin-top: 30px;
+list-style: none;
+}
+
+#index-bienvenida-home{
+    border: solid 1px black;
+    height: 450px;
+    width: 100%;
+}

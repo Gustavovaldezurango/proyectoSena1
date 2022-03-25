@@ -31,8 +31,9 @@
     height: 30px;
     width: 50px;
 }
-a{
+a{  
     text-decoration: none;
+    color: black;
 }
 
 #texto-salir-home{
@@ -58,13 +59,15 @@ a{
 
 
 #titulo-menu-home{
-    border: 1px solid rgb(38, 0, 255);
+    background-color: rgb(251 125 31);
+    border: 1px solid rgb(251 125 31);
     height: 40px;
     text-align: center;
 }
 
 .h2-home{
-margin-top: 4px;
+    
+    margin-top: 4px;
 }
 
 .lista-home-1{
@@ -80,3 +83,17 @@ list-style: none;
     height: 450px;
     width: 100%;
 }
+
+#Menu li {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* #Menu li:hover{
+    background-color: rgba(255, 72, 0, 0.959);
+    color: white;
+    
+} */

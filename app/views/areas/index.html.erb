@@ -21,7 +21,7 @@
             </div>
             <div id="Menu">
                 <ul class="lista-areas">
-                    <li class="lista-areas-1"><%= link_to "Nueva Area", areas_path, :method => :get %></li>
+                    <li class="lista-areas-1"><%= link_to "Nueva Area", new_area_path, :method => :get %></li>
                 </ul>
             </div>
             <div class ="volver-areas">
@@ -29,8 +29,14 @@
             </div>
         </section>
 
-        <section id="index-bienvenida-home">
-            <p>In id nulla imperdiet, dignissim risus at, vulputate erat. Quisque at commodo quam. Phasellus ornare non augue a tincidunt. Cras eu gravida nibh. Proin posuere lacinia nisl id molestie. Nulla porttitor ligula quis dignissim luctus. Mauris risus est, scelerisque id pellentesque et, sollicitudin et sem. Sed eu consequat est, nec consectetur dolor. Morbi eget urna at leo consectetur imperdiet dignissim ut orci. Donec sagittis ipsum ut ipsum tempor, pulvinar dignissim lacus suscipit. Sed ultrices ultricies bibendum.</p>
+        <section class="index-informacion-areas">
+            <table border 1px>
+                <tr>
+                    <th>Codigo Area:</th>
+                    <th>Nombre Area:</th>
+                </tr>
+            <%= render @areas %>
+            </table>
         </section>
         
     </main>

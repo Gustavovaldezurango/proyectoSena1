@@ -93,3 +93,14 @@ list-style: none;
 /* -------------------------------------------------------------- */
 
 
+/* -----------------estilos de las demas vistas de area----------------- */
+
+.index-informacion-areas{
+    border: solid 1px black;
+    height: 450px;
+    width: 100%;
+}
+
+.lista-areas li{
+    text-align: center;
+}

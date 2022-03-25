@@ -1,0 +1,31 @@
+<h1>Editing area</h1>
+
+<%= form_for :area, :url => { :action => :update, :id => @area.id },
+:method => :put do |f| %>
+  <% if @area.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@area.errors.count, "error") %> prohibited
+      this post from being saved:</h2>
+    <ul>
+    <% @area.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+  <p>
+    <%= f.label :codigo_area%><br>
+    <%= f.text_field :codigo_area%>
+  </p>
+
+  <p>
+    <%= f.label :nombre_area %><br>
+    <%= f.text_area :nombre_area %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', :action => :index %>

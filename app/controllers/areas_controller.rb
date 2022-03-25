@@ -1,4 +1,5 @@
 class AreasController < ApplicationController
+    before_action :authenticate_user!
     def index
         @areas = Area.all
     end
@@ -19,15 +20,18 @@ class AreasController < ApplicationController
     end
 
     def edit
+        @area = Area.find(params[:id])
 
     end
 
     def update
-        @area =  Area.find(params[:codigo_area])
-        Area.update(
-            codigo_area: params[:codigo_area],
-            nombre_area: params[:nombre_area]
-        )
+        @area =  Area.find(params[:id])
+        @area.update(
+            codigo_area: params[:area][:codigo_area],
+            nombre_area: params[:area][:nombre_area])
+        
+        redirect_to area_path(@area)
+
     end
 
 

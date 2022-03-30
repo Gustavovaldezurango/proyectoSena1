@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   end
 
   resources :home, only:[:index]
-  resources :areas
+  resources :areas do
+    resources :programas, module: :areas
+  end 
  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

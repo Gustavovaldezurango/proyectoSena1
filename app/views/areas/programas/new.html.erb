@@ -29,20 +29,9 @@
         </section>
 
         <section class="index-informacion-areas">
-             <p>
-                <strong>Codigo:</strong>
-                <%= @area.codigo_area %>
-            </p>
-      
-            <p>
-                <strong>nombre:</strong>
-                <%=  @area.nombre_area %>
-            </p>
-|           <%= link_to 'Edit', :action => :edit, :id => @area.id %>
-
-                   
+          <%= render 'form-pro' %>
         </section>
-       
+        
         
     </main>
 </body>

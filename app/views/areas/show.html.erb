@@ -21,6 +21,9 @@
             </div>
             <div id="Menu">
                 <ul class="lista-areas">
+                <li> <%= link_to 'Editar', :action => :edit, :id => @area.id %> </li>
+                <li> <%= link_to "Ver programas", area_programas_path(@area.id) %> </li>
+                
                 </ul>
             </div>
             <div class ="volver-areas">
@@ -38,8 +41,7 @@
                 <strong>nombre:</strong>
                 <%=  @area.nombre_area %>
             </p>
-|           <%= link_to 'Edit', :action => :edit, :id => @area.id %>
-
+|          
                    
         </section>
        

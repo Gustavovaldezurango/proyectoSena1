@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_30_195143) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_01_221043) do
   create_table "areas", force: :cascade do |t|
     t.integer "codigo_area"
     t.string "nombre_area"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ficha_programas", force: :cascade do |t|
+    t.datetime "fecha"
+    t.boolean "estado"
+    t.integer "ficha_id", null: false
+    t.integer "programa_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ficha_id"], name: "index_ficha_programas_on_ficha_id"
+    t.index ["programa_id"], name: "index_ficha_programas_on_programa_id"
+  end
+
+  create_table "fichas", force: :cascade do |t|
+    t.string "nombre_fic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,5 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_30_195143) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "ficha_programas", "fichas"
+  add_foreign_key "ficha_programas", "programas"
   add_foreign_key "programas", "areas"
 end

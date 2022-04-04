@@ -1,19 +1,19 @@
 <head>
     <script src="https://kit.fontawesome.com/594d98509e.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag "normalize" %>
     <%= stylesheet_link_tag "home" %>
 
 </head>
 
 <body class ="container-home">
-    <nav class= "home-nav">
-        <section id="index-logo-home"><%= image_tag("logo.png", width: "80", height: "60")%></section>
-        <section id="index-salir-home">
-            <div id="texto-salir-home">
+     <nav class= "navegacion">
+        <section class="navegacion__logo"><%= image_tag("logoPrincipa.png", width: "80", height: "70")%></section>
+        <section class="navegacion__boton">
+            <div class="navegacion__textoBoton">
                 <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
             </div>
         </section>
     </nav>
-
     <main class= "home-main">
         <section class="container-lista-home">
             <div id="titulo-menu-home">

@@ -5,15 +5,14 @@
 </head>
 
 <body class ="container-areas">
-    <nav class= "nav-area">
-        <section id="index-logo-area"><%= image_tag("logo.png", width: "80", height: "60")%></section>
-        <section id="index-salir-area">
-            <div id="texto-salir-area">
+     <nav class= "navegacion">
+        <section class="navegacion__logo"><%= image_tag("logoPrincipa.png", width: "80", height: "70")%></section>
+        <section class="navegacion__boton">
+            <div class="navegacion__textoBoton">
                 <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
             </div>
         </section>
     </nav>
-
     <main class= "main-areas">
         <section class="container-lista-areas">
             <div id="titulo-menu-areas">
@@ -24,7 +23,7 @@
                 </ul>
             </div>
             <div class ="volver-areas">
-                <%= link_to "Volver", areas_path, :method => :get %>
+                <%= link_to "Volver", area_programas_path, :method => :get %>
             </div>
         </section>
 

@@ -16,12 +16,13 @@
     <main class= "main-areas">
         <section class="container-lista-areas">
             <div id="titulo-menu-areas">
-                <h2 class= "h2-areas">Titulo</h2>
+                <h2 class= "h2-areas">Area</h2>
             </div>
             <div id="Menu">
                 <ul class="lista-areas">
                 <li> <%= link_to 'Editar', :action => :edit, :id => @area.id %> </li>
                 <li> <%= link_to "Ver programas", area_programas_path(@area.id) %> </li>
+                
                 
                 </ul>
             </div>

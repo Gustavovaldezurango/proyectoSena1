@@ -29,11 +29,7 @@
         </section>
 
         <section class="index-informacion-areas">
-            <%= simple_form_for @area do |f| %>
-                <%= f.input :codigo_area %>
-                <%= f.input :nombre_area %>
-                <%= f.button :submit %>
-            <% end %>
+            <%= render "form" %>
         </section>
         
         

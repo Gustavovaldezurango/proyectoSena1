@@ -1,3 +1,3 @@
 class Area < ApplicationRecord
-    has_many :programas
+    has_many :programas, dependent: :destroy
 end

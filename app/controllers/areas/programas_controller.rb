@@ -2,12 +2,28 @@ class Areas::ProgramasController < ApplicationController
   before_action :set_area
   before_action :authenticate_user!
 
+  
   def index 
     @programas = @area.programas
   end
+  
+ 
   def new
     @programa = @area.programas.new
   end
+
+ 
+  def edit 
+  @programa = @area.programas.find(params[:id])
+end 
+
+ 
+def show
+    @programa = @area.programas.find(params[:id])
+  end
+ 
+ 
+ 
   def create
     @programa = @area.programas.create(params_programa)
     if @programa.save 
@@ -15,13 +31,21 @@ class Areas::ProgramasController < ApplicationController
     else 
         render :new 
     end
-    def destroy
-      @programa = @area.programas.find(params[:id])
-      @programa.destroy
-      redirect_to area_programas_path
+   end
 
-     
-  end
+  
+   def update
+    @programa = @area.programas.find(params[:id])
+    @programa.update(params_programa)
+    redirect_to area_programas_path
+
+end
+
+
+def destroy
+  @programa = @area.programas.find(params[:id ])
+  @programa.destroy
+  redirect_to area_programas_path
 end
 
 

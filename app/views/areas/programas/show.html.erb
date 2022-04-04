@@ -17,14 +17,11 @@
     <main class= "main-areas">
         <section class="container-lista-areas">
             <div id="titulo-menu-areas">
-                <h2 class= "h2-areas">Area</h2>
+                <h2 class= "h2-areas">Titulo</h2>
             </div>
             <div id="Menu">
-                <ul class="lista-areas">
-                <li> <%= link_to 'Editar', :action => :edit, :id => @area.id %> </li>
-                <li> <%= link_to "Ver programas", area_programas_path(@area.id) %> </li>
-                
-                
+                <ul class="lista-areas"> 
+                <li> <%= link_to "edit", edit_area_programa_path(@area, @programa) %> </li>
                 </ul>
             </div>
             <div class ="volver-areas">
@@ -35,12 +32,12 @@
         <section class="index-informacion-areas">
              <p>
                 <strong>Codigo:</strong>
-                <%= @area.codigo_area %>
+                <%= @programa.codigo_pro %>
             </p>
       
             <p>
                 <strong>nombre:</strong>
-                <%=  @area.nombre_area %>
+                <%=  @programa.nombre_pro %>
             </p>
 |          
                    

@@ -55,12 +55,12 @@
 }
 
 #titulo{
-    color: rgb(255, 72, 0)
+    color: var(--secundario);
 }
 
 .informacion-empresa{
     padding-top: 10px;
-    color: rgb(255, 72, 0)
+    color: var(--secundario);
 }
 
 
@@ -76,4 +76,8 @@
     width: 300px;
     text-align: center;
     border-radius: 20px;
+}
+
+#registrar h2 {
+    color: var(--secundario);
 }

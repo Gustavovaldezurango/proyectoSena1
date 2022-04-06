@@ -36,6 +36,7 @@ def show
   
    def update
     @programa = @area.programas.find(params[:id])
+   
     @programa.update(params_programa)
     redirect_to area_programas_path
 
@@ -56,7 +57,7 @@ private
   end
 
   def params_programa
-  params.require(:programa).permit(:codigo_pro, :nombre_pro)
+  params.require(:programa).permit(:codigo_pro, :nombre_pro, ficha_ids: [])
   end 
   
 

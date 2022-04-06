@@ -18,9 +18,12 @@
  :root {
      --primario: #251E17;
      --secundario: #FF8138;
+
+     --blanco: #FFF;
+     --terciario:#669900;
      --terciario: #669900;
      --blanco: #FFF;
-
+   main
      
  }
 
@@ -71,7 +74,7 @@ footer{
     position: relative; right: 50px; top: 15px;
     border-radius: 10px;
     height: 30px;
-    width: 50px;
+    width: 50px;                
 }
 
 .navegacion a {

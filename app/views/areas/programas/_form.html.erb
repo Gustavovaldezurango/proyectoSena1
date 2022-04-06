@@ -1,5 +1,7 @@
 <%= simple_form_for [@area , @programa] do |f| %>
     <%= f.input :codigo_pro %>
     <%= f.input :nombre_pro %>
+    <%= f.association :fichas, as: :check_boxes, label_method: :nombre_fic %>
+
     <%= f.button :submit %>
 <% end %>

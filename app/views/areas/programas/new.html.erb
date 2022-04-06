@@ -1,11 +1,10 @@
 <head>
     <script src="https://kit.fontawesome.com/594d98509e.js" crossorigin="anonymous"></script>
-    <%= stylesheet_link_tag "normalize" %>
-    <%= stylesheet_link_tag "home" %>
+    <%= stylesheet_link_tag "areas" %>
 
 </head>
 
-<body class ="container-home">
+<body class ="container-areas">
      <nav class= "navegacion">
         <section class="navegacion__logo"><%= image_tag("logoPrincipa.png", width: "80", height: "70")%></section>
         <section class="navegacion__boton">
@@ -14,23 +13,24 @@
             </div>
         </section>
     </nav>
-    <main class= "home-main">
-        <section class="container-lista-home">
-            <div id="titulo-menu-home">
-                <h2 class= "h2-home">Dashboard</h2>
+    <main class= "main-areas">
+        <section class="container-lista-areas">
+            <div id="titulo-menu-areas">
+                <h2 class= "h2-areas">Titulo</h2>
             </div>
             <div id="Menu">
-                <ul class="Home-Listas">
-                    <li class="lista-home-1"><%= link_to "Areas", areas_path, :method => :get %></li>
-                    <li class="lista-home-1"></li>
-                    <li class="lista-home-1"></li>
+                <ul class="lista-areas">
                 </ul>
+            </div>
+            <div class ="volver-areas">
+                <%= link_to "Volver", area_programas_path, :method => :get %>
             </div>
         </section>
 
-        <section id="index-bienvenida-home">
-            <h3>Bienvenidos</h3>
+        <section class="index-informacion-areas">
+          <%= render 'form' %>
         </section>
+        
         
     </main>
 </body>

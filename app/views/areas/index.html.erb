@@ -1,23 +1,23 @@
 <head>
     <script src="https://kit.fontawesome.com/594d98509e.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag "normalize" %>
     <%= stylesheet_link_tag "areas" %>
 
 </head>
 
 <body class ="container-areas">
-    <nav class= "nav-area">
-        <section id="index-logo-area"><%= image_tag("logo.png", width: "80", height: "60")%></section>
-        <section id="index-salir-area">
-            <div id="texto-salir-area">
+     <nav class= "navegacion">
+        <section class="navegacion__logo"><%= image_tag("logoPrincipa.png", width: "80", height: "70")%></section>
+        <section class="navegacion__boton">
+            <div class="navegacion__textoBoton">
                 <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
             </div>
         </section>
     </nav>
-
     <main class= "main-areas">
         <section class="container-lista-areas">
             <div id="titulo-menu-areas">
-                <h2 class= "h2-areas">Titulo</h2>
+                <h2 class= "h2-areas">Areas</h2>
             </div>
             <div id="Menu">
                 <ul class="lista-areas">
@@ -34,7 +34,7 @@
                 <tr>
                     <th>Codigo De Area</th>
                     <th>Nombre De Area</th>
-                    <th colspan="3" >Opciones</th>
+                    <th colspan="4" >Opciones</th>
                 </tr>
             <%= render @areas %>
             </table>

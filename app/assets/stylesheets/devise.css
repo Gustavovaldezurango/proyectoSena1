@@ -1,10 +1,3 @@
-.main-devise{
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-}
 
 .main-login-devise{
     display: flex;
@@ -70,9 +63,6 @@
     color: rgb(255, 72, 0)
 }
 
-footer{
-    height: 60px;
-}
 
 #info-footer{
     font-weight: bold;

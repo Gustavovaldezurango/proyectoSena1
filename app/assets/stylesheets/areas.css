@@ -13,6 +13,7 @@
     height: 60px;
     display: flex;
     justify-content: space-between;
+    background-color: #1A1816;
     background-color: gainsboro;
 }
 
@@ -104,3 +105,6 @@ list-style: none;
 .lista-areas li{
     text-align: center;
 }
+
+
+

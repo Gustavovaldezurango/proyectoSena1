@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;700&display=swap" rel="stylesheet">
     <title>ProyectoSena1</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -12,7 +15,9 @@
 
   <body>
     <%= yield %>
+    
     <footer>
+        <div id="info-footer">SENA - Centro Industrial y De Aviacion - Todos Los Derechos Reservados 2022</div>
         <div id="info-footer">Version 1.0.0</div>
     </footer>
   </body>

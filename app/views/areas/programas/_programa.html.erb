@@ -4,4 +4,10 @@
 
 <td> <%= link_to programa.nombre_pro, area_programa_path(@area, programa) %> </td>
 
+<td><%= link_to 'Eliminar', area_programa_path(@area, programa),
+              data: {
+                "turbo-method": :delete,
+                
+              } %></td>
+
 </tr>

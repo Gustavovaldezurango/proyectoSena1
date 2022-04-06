@@ -18,13 +18,8 @@
  :root {
      --primario: #251E17;
      --secundario: #FF8138;
-
-     --blanco: #FFF;
-     --terciario:#669900;
      --terciario: #669900;
-     --blanco: #FFF;
-   main
-     
+     --blanco: #FFF;   
  }
 
 body {

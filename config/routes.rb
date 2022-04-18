@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :programas, module: :areas
   end 
   resources :fichas 
+  resources :fichaprograma
   
  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

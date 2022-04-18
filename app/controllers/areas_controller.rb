@@ -5,10 +5,13 @@ class AreasController < ApplicationController
     end
 
     def new
+        
         @area = Area.new
+        authorize @area
     end
 
     def create
+        # authorize @area
         @area = Area.create(
             codigo_area: params[:area][:codigo_area],
             nombre_area: params[:area][:nombre_area])

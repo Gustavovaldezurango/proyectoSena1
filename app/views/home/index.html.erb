@@ -14,21 +14,30 @@
             </div>
         </section>
     </nav>
-    <main class= "home-main">
-        <section class="container-lista-home">
-            <div id="titulo-menu-home">
-                <h2 class= "h2-home">Dashboard</h2>
+    <main class= "contenedorHome">
+        <section class="menu">
+            <div class="menu__titulo">
+                <h2>Administrador</h2>
             </div>
+
             <div id="Menu">
                 <ul class="Home-Listas">
                     <li class="lista-home-1"><%= link_to "Areas", areas_path, :method => :get %></li>
                     <li class="lista-home-1"><%= link_to "fichas",  fichas_path %></li> 
+<<<<<<< HEAD
+=======
+                    <li class="lista-home-1"></li>
+
+            <div class="menu__lista">
+                <ul>
+                    <li><%= link_to "Areas", areas_path, :method => :get %></li>
+>>>>>>> eb9ab71eb571f0ce45ee657d5ec71d18b5897ed5
 
                 </ul>
             </div>
         </section>
 
-        <section id="index-bienvenida-home">
+        <section class="informacion">
             <h3>Bienvenidos</h3>
         </section>
         

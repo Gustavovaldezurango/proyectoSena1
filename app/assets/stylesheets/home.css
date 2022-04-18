@@ -1,27 +1,16 @@
 @import "font-awesome";
 
 :root {
-    --footer: #251E17;
-    --primario: #413535;
+    --primario: #251E17;
+    --secundario: #FF8138;
+    --terciario: #669900;
+    --blanco: #FFF;   
+    --negro: #000;
 }
 
 
-.container-home{
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-}
-
-
-#texto-salir-home{
-    padding-top: 5px;
-    /*box-shadow: 10px 5px 5px black;*/
-    
-}
-
-.home-main{
+/* menu */
+.contenedorHome{
     width: 100%;
     display: flex;
     justify-content: start;
@@ -29,50 +18,38 @@
     margin-top: 5px;
     margin-bottom: 50px;
 }
-
-.container-lista-home{
+.menu {
     border: solid 1px black;
     width: 250px;
     height: 450px;
 }
-
-
-#titulo-menu-home{
-    background-color: rgb(251 125 31);
-    border: 1px solid rgb(251 125 31);
+.menu__titulo {
+    background-color: var(--secundario);
+    border: 1px solid var(--secundario);
     height: 40px;
     text-align: center;
 }
-
-.h2-home{
-    
+.menu__titulo h2 {
     margin-top: 4px;
 }
-
-.lista-home-1{
-height: 25px;
-margin-left: -40px;
-border: solid 1px rebeccapurple;
-margin-top: 30px;
-list-style: none;
-}
-
-#index-bienvenida-home{
-    border: solid 1px black;
-    height: 450px;
-    width: 100%;
-}
-
-#Menu li {
+.menu__lista a {
     display: block;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
 }
+.menu__lista ul li {
+    height: 25px;
+    margin-left: -40px;
+    border: solid 1px rebeccapurple;
+    margin-top: 30px;
+    list-style: none;
+}
 
+/* informacion */
 
-/* #Menu li:hover{
-    background-color: rgba(255, 72, 0, 0.959);
-    color: white;
-    
-} */
+.informacion {
+    border: solid 1px black;
+    height: 450px;
+    width: 100%;
+}
